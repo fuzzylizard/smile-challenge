@@ -41,8 +41,9 @@ gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
 
 # Custom Gems
-gem "tailwindcss-rails"
+gem "dotenv-rails", require: false
 gem "rack-cors"
+gem "tailwindcss-rails"
 
 
 group :development, :test do
