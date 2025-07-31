@@ -6,6 +6,6 @@ class PointsController < ApplicationController
   end
 
   def create
-    
+    LoyaltyProgram.new.new_reward
   end
 end

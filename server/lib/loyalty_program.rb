@@ -27,7 +27,7 @@ class LoyaltyProgram
 
     request = Net::HTTP::Post.new(url)
     request["Content-Type"] = "application/json"
-    request["Authorization"] = "Bearer api_b6f20eefed86fa1a5d7fc17a26473f01"
+    request["Authorization"] = "Bearer #{ENV["API_KEY"]}"
     request.body = JSON.dump({
                                "activity": {
                                  "customer_id": 3012968197,
